@@ -196,7 +196,8 @@ footer p {
 		grid-gap: 0px;
 	}
 
-	.navbar > div, body > div {
+	.navbar > div,
+	body > div {
 		padding: 35px 20px;
 	}
 }
