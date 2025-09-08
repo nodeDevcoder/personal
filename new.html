@@ -6,26 +6,175 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jibril's Website</title>
   <link rel="stylesheet" href="new.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+  <div id="particles-js">
 
-  <nav class="navbar">
-    <div>
-      <h2><a href="#">Jibril A. Moinuddin</a></h2>
-      <ul>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
+  </div>
+  <div class="top-nav">
+    <div class="t-inner">
+      <div class="t-left">
+        <p class="t-text-head">Jibril Asif Moinuddin</p>
+      </div>
+      <div class="t-right">
+        <span>Fri Aug 29</span>
+        <span>11:39 PM</span>
+      </div>
     </div>
-  </nav>
+  </div>
+  <div class="window">
+    <div class="topbar">
+      <span class="t-circle bg-red"></span>
+      <span class="t-circle bg-yellow"></span>
+      <span class="t-circle bg-green"></span>
+    </div>
+    <div class="inner">
+      <h1 class="primary">Hello, I'm Jibril.</h1>
+      <p class="text">I'm an engineering student studying Computer Science at the University of Michigan.</p>
+      <p class="text">My interests are in artificial intelligence, software development, and education accessibility.</p>
+      <p class="text">Contact me <a href="#contact">here</a>.</p>
+      <hr class="divider">
+      <h2 class="mini-title">Education</h2>
+      <div class="education-card">
+      </div>
+    </div>
+  </div>
+
+
 
   <style>
     .primary {
       color: #1e8dcc;
     }
+
+    /* body {
+      background-color: #080048;
+    } */
   </style>
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 350,
+          "density": {
+            "enable": true,
+            "value_area": 1443.0708547789707
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.09620472365193136,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 208.44356791251798,
+          "color": "#ffffff",
+          "opacity": 0.09620472365193136,
+          "width": 1.2827296486924182
+        },
+        "move": {
+          "enable": true,
+          "speed": 1.603412060865523,
+          "direction": "none",
+          "random": true,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": false,
+            "mode": "grab"
+          },
+          "onclick": {
+            "enable": false,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 194.88745249618358,
+            "line_linked": {
+              "opacity": 0.7650417071124206
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+    update = function() {
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);;
+  </script>
 </body>
 
 </html>
